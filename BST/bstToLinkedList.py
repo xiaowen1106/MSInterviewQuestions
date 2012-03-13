@@ -45,8 +45,6 @@ def connectToList(x):
 		last = x
 
 def inorder_tree_walk(x):
-	global last;
-	global linked_list;
 	if x != None:
 		inorder_tree_walk(x.left)
 		connectToList(x)
