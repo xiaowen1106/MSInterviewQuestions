@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+#CLRS Chapter 4 Divide-and-Conquer 3rd Edition p68
 def find_max_crossing_subarray(A,low,mid,high):
 	#find leftside max subarray
 	left_sum = None
