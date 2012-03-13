@@ -12,6 +12,7 @@ Binary Search Tree Questions:
 	to:
 	    4 -> 6 -> 8 -> 10 -> 12-> 14-> 16
 
+	Hint: using inorder_tree_walk of a BST
 
 Linked List Questions:
 
@@ -23,6 +24,5 @@ Linked List Questions:
 
 Min Max Questions:
 
-1. Given an array of both positive and negative integers, try to find the subarray who has the maximum sum
-
+1. Given an array of both positive and negative integers, try to find the maximum sum of all its subarraya. Requirement: O(n) time efficiency
 
