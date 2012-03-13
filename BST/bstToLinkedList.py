@@ -32,6 +32,7 @@ def tree_insert(T,z):
 linked_list = None
 last = None
 
+#after conversion, we use node.left as the pointer to its next node, and node.p as the pointer to its parent node
 def convertToList(x):
 	global last;
 	global linked_list;
