@@ -9,7 +9,7 @@ class BSTNode:
 		self.p = None
 		self.key = val
 
-
+#insert element in a BST
 def tree_insert(T,z):
 	y = None
 	x = T
@@ -28,32 +28,36 @@ def tree_insert(T,z):
 	else:
 		y.right = z
 
-
+#init linked_list and the last element of list to null
 linked_list = None
 last = None
 
 #after conversion, we use node.left as the pointer to its next node, and node.p as the pointer to its parent node
-def convertToList(x):
+def connectToList(x):
 	global last;
 	global linked_list;
-	if x!=None:
-		convertToList(x.left)
-		if last == None:
-			linked_list = x
-			last = x
-		else:
-			last.left = x
-			x.p = last
-			last = x
-		print last.key
-		convertToList(x.right)
+	if last == None:
+		linked_list = x
+		last = x
+	else:
+		last.left = x
+		x.p = last
+		last = x
+
+def inorder_tree_walk(x):
+	global last;
+	global linked_list;
+	if x != None:
+		inorder_tree_walk(x.left)
+		connectToList(x)
+		inorder_tree_walk(x.right)
 
 def printList(l):
 	while l != None:
 		print l.key
 		l = l.left
 
-
+#test
 T = BSTNode(10)
 tree_insert(T,BSTNode(4))
 tree_insert(T,BSTNode(6))
@@ -62,5 +66,5 @@ tree_insert(T,BSTNode(12))
 tree_insert(T,BSTNode(14))
 tree_insert(T,BSTNode(16))
 
-convertToList(T)
+inorder_tree_walk(T)
 printList(linked_list)
