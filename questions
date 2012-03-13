@@ -11,3 +11,18 @@ Binary Search Tree Questions:
 
 	to:
 	    4 -> 6 -> 8 -> 10 -> 12-> 14-> 16
+
+
+Linked List Questions:
+
+1. Define a Stack structure. Requirement: time efficiency for push(), pop() and min() are all O(1)
+	Hint: use a auxiliary stack to maintain the miminum values
+
+
+
+
+Min Max Questions:
+
+1. Given an array of both positive and negative integers, try to find the subarray who has the maximum sum
+
+
