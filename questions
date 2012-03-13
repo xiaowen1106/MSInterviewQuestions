@@ -3,7 +3,7 @@ Questions:
 Binary Search Tree Questions:
 
 1.Convert a Binary Search Tree to a Double Linked List, without using extra data structure
-	example:      10
+	example:  10
 		     /  \
 		    6    14
 		   / \   / \
